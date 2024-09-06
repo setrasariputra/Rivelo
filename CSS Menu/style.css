@@ -15,6 +15,11 @@ body {
 }
 .horizontal-menu ul li {
     display: inline-block;
+    border-right: 1px solid #aaaaaa;
+    margin-left: -4px;
+}
+.horizontal-menu ul li:first-child {
+    margin-left: 0px;
 }
 .horizontal-menu ul li a {
     display: block;
@@ -32,6 +37,9 @@ body {
 .horizontal-menu-green {
     background-color: #19B697;
 }
+.horizontal-menu-green ul li {
+    border-right: 1px solid #0e8d73;
+}
 .horizontal-menu-green ul li a:hover {
     background-color: #0a705c;
 }
@@ -43,6 +51,9 @@ body {
 }
 .horizontal-menu-blue {
     background-color: #2F8ECE;
+}
+.horizontal-menu-blue ul li {
+    border-right: 1px solid #1d6fa7;
 }
 .horizontal-menu-blue ul li a {
     color: white;
