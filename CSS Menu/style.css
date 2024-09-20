@@ -40,21 +40,24 @@ body {
     position: absolute;
     width: 200px;
     z-index: 10;
-    background-color: #333333;
+    background-color: #CBD0D4;
 }
 .horizontal-menu li:hover ul {
     display: block;
 }
 .horizontal-menu li:hover ul li {
     display: block;
+    border-right: none;
+    margin-left: 0px;
+    border-bottom: 1px solid #bbbbbb;
 }
 .horizontal-menu li:hover ul li a {
-    color: #ffffff;
+    color: #333333;
     background-color: #cccccc;
 }
 .horizontal-menu li:hover ul li a:hover {
-    color: #333333;
-    background-color: #b2bbc3;
+    color: #ffffff;
+    background-color: #333333;
 }
 .horizontal-menu li:hover a {
     background-color: #b2bbc3;
