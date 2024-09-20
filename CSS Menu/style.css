@@ -12,6 +12,7 @@ body {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    position: relative;
 }
 .horizontal-menu ul li {
     display: inline-block;
@@ -34,6 +35,31 @@ body {
 .horizontal-menu ul li a:hover {
     background-color: #b2bbc3;
 }
+.horizontal-menu ul ul {
+    display: none;
+    position: absolute;
+    width: 200px;
+    z-index: 10;
+    background-color: #333333;
+}
+.horizontal-menu li:hover ul {
+    display: block;
+}
+.horizontal-menu li:hover ul li {
+    display: block;
+}
+.horizontal-menu li:hover ul li a {
+    color: #ffffff;
+    background-color: #cccccc;
+}
+.horizontal-menu li:hover ul li a:hover {
+    color: #333333;
+    background-color: #b2bbc3;
+}
+.horizontal-menu li:hover a {
+    background-color: #b2bbc3;
+}
+
 .horizontal-menu-green {
     background-color: #19B697;
 }
