@@ -11,11 +11,13 @@ body {
     max-width: 1270px;
     margin: auto;
 }
+.topbar-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .logo {
-    background-color: red;
     display: flex;
     align-items: center;
-    height: 58px;
 }
 .logo img {
     width: 110px;
@@ -28,4 +30,10 @@ body {
 }
 .footer {
 
+}
+.bg-red {
+    background-color: red;
+}
+.bg-blue {
+    background-color: blue;
 }
