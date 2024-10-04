@@ -51,6 +51,9 @@ body {
 .btn.btn-orange:hover {
     background-color: #EE6509;
 }
+.icon-sm {
+    font-size: 10px;
+}
 .hero {
 
 }
