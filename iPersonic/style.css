@@ -11,6 +11,15 @@ body {
     max-width: 1270px;
     margin: auto;
 }
+.logo {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    height: 58px;
+}
+.logo img {
+    width: 110px;
+}
 .hero {
 
 }
