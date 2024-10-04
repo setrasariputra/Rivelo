@@ -1,3 +1,22 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.topbar {
+    background-color: #2C3E50;
+    height: 58px;
+}
+.container {
+    max-width: 1270px;
+    margin: auto;
+}
+.hero {
+
+}
+.main {
+
+}
+.footer {
+
 }
