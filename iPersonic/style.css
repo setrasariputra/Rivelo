@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
@@ -14,6 +17,7 @@ body {
 .topbar-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 58px;
 }
 .logo {
     display: flex;
@@ -21,6 +25,31 @@ body {
 }
 .logo img {
     width: 110px;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-blue {
+    background-color: blue;
+}
+.btn {
+    display: inline-block;
+    background-color: #cccccc;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px 10px 20px;
+}
+.btn.btn-sm {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+}
+.btn.btn-orange {
+    background-color: #FF7518;
+    color: white;
+}
+.btn.btn-orange:hover {
+    background-color: #EE6509;
 }
 .hero {
 
@@ -30,10 +59,4 @@ body {
 }
 .footer {
 
-}
-.bg-red {
-    background-color: red;
-}
-.bg-blue {
-    background-color: blue;
 }
