@@ -93,7 +93,7 @@ body {
     display: block;
 }
 .topmenu li:hover ul li a {
-    background-color: #eeeeee;
+    background-color: #ffffff;
     color: #333333;
     font-size: 16px;
     padding: 5px 15px 5px 15px;
@@ -104,7 +104,19 @@ body {
     color: white;
 }
 .hero {
-
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(to bottom, #E1EAEF, #CFD9DF);
+}
+.hero h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 65px;
+    color: #333333;
+    line-height: 1.2
+}
+.font-weight-light {
+    font-weight: 200;
 }
 .main {
 
