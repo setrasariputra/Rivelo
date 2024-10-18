@@ -11,7 +11,7 @@ body {
     height: 58px;
 }
 .container {
-    max-width: 1270px;
+    max-width: 1150px;
     margin: auto;
 }
 .topbar-column {
@@ -24,7 +24,7 @@ body {
     align-items: center;
 }
 .logo img {
-    width: 110px;
+    width: 100px;
 }
 .bg-red {
     background-color: red;
@@ -53,6 +53,27 @@ body {
 }
 .icon-sm {
     font-size: 10px;
+}
+.topmenu {
+    text-align: right;
+}
+.topmenu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.topmenu ul li {
+    display: inline-block;
+}
+.topmenu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 17px 15px 17px 15px;
+    font-size: 18px;
+}
+.topmenu ul li a:hover {
+    background-color: black;
 }
 .hero {
 
