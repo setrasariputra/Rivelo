@@ -44,6 +44,10 @@ body {
     font-weight: bold;
     padding: 5px 10px 5px 10px;
 }
+.btn.btn-lg {
+    font-size: 20px;
+    padding: 20px 35px 20px 35px;
+}
 .btn.btn-orange {
     background-color: #FF7518;
     color: white;
@@ -119,7 +123,12 @@ body {
     font-weight: 200;
 }
 .main {
-
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #333333;
+}
+.lead {
+    font-size: 20px;
 }
 .footer {
 
