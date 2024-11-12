@@ -171,3 +171,18 @@ body {
         margin-left: -150px;
     }
 }
+@media (max-width:1025px) {
+    .topbar {
+        background-color: blue;
+    }
+}
+@media (max-width:715px) {
+    .topbar {
+        background-color: green;
+    }
+}
+@media (max-width:435px) {
+    .topbar {
+        background-color: black;
+    }
+}
