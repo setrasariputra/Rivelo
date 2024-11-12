@@ -131,5 +131,14 @@ body {
     font-size: 20px;
 }
 .footer {
-
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
+.footer a {
+    text-decoration: none;
+    color: #2780E3;
+}
+.footer a:hover {
+    text-decoration: underline;
 }
