@@ -107,6 +107,9 @@ body {
     background-color: #2780E3;
     color: white;
 }
+.topmenu ul li a.show-on-tab {
+    display: none;
+}
 .hero {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -141,4 +144,27 @@ body {
 }
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* Start Reponsive Design */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 950px;
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 95%;
+    }
+    .topmenu ul li a.show-on-tab {
+        display: block;
+    }
+    .topmenu ul li a.hide-on-tab {
+        display: none;
+    }
 }
