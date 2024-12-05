@@ -125,6 +125,13 @@ body {
 .font-weight-light {
     font-weight: 200;
 }
+h1 {
+    font-size: 37px;
+}
+.h-ruler {
+    border-top: none;
+    border-bottom: 1px solid #E6E6E6;
+}
 .main {
     padding-top: 20px;
     padding-bottom: 20px;
