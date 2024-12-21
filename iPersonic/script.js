@@ -5,6 +5,14 @@ class PersonalityQuiz { // class or module
 
     init() {
         this.displayFooter();
+        this.displayDropdownMenu();
+    }
+
+    displayDropdownMenu() {
+        let topMenuHTML = '<ul><li><a href="#">Idealis Penyelaras</a></li><li><a href="#">Idealis Terlibat</a></li><li><a href="#">Pemikir Dinamis</a></li><li><a href="#">Pemikir Pendobrak</a></li><li><a href="#">Idealis Spontan</a></li><li><a href="#">Sample Menu</a></li></ul>';
+
+        const topMenuContainer = document.querySelector('.dropdown-menu-container');
+        topMenuContainer.innerHTML = topMenuHTML;
     }
 
     displayFooter() { // function or method
@@ -16,5 +24,5 @@ class PersonalityQuiz { // class or module
     }
 }
 
-// Iniatilize PersonalityQuiz module
+// Initialize PersonalityQuiz module
 new PersonalityQuiz(); 
