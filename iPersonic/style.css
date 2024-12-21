@@ -7,7 +7,7 @@ body {
     padding: 0px;
 }
 .topbar {
-    background-color: #2C3E50;
+    background-color: #6942a9;
     height: 58px;
 }
 .container {
@@ -49,11 +49,21 @@ body {
     padding: 20px 35px 20px 35px;
 }
 .btn.btn-orange {
-    background-color: #FF7518;
+    background-color: #ff8000;
     color: white;
 }
 .btn.btn-orange:hover {
-    background-color: #EE6509;
+    background-color: #af5f0e;
+}
+.btn.btn-maroon {
+    font-size: 14px;
+    background-color: #a9424e;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+.btn.btn-maroon:hover {
+    background-color: #7c343d;
 }
 .icon-sm {
     font-size: 10px;
@@ -104,7 +114,7 @@ body {
     text-align: left;
 }
 .topmenu li:hover ul li a:hover {
-    background-color: #2780E3;
+    background-color: #6942a9;
     color: white;
 }
 .topmenu ul li a.show-on-tab {
@@ -140,6 +150,13 @@ h1 {
 .lead {
     font-size: 20px;
 }
+.text-result {
+    padding: 5px 0px 60px 0px;
+}
+.btn-result {
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+}
 .quiz {
     margin-top: 20px;
 }
@@ -155,12 +172,26 @@ h1 {
     border-radius: 5px;
     color: #999999;
 }
+.font-gill-sans {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .quiz .quiz-step ul li.active {
-    background-color: #aaaaaa;
+    background-color: #6942a9;
     color: white;
 }
 .quiz .quiz-options {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.quiz-options .quiz-box {
+    background-color: #f5f5f5;
+    border: 2px solid #e3e3e3;
+    font-size: 22px;
+    padding: 15px 15px 20px 20px;
 }
 
 .footer {
@@ -173,9 +204,8 @@ h1 {
     color: #2780E3;
 }
 .footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline;  
 }
-
 /* Start Reponsive Design */
 @media (max-width: 1200px) {
     .container {
