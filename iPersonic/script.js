@@ -1,19 +1,53 @@
 class PersonalityQuiz { // class or module
     constructor() {
+        this.personalities = [
+            {'url': '1.html', 'label': 'Idealis Penyelaras'},
+            {'url': '2.html', 'label': 'Idealis Terlibat'},
+            {'url': '3.html', 'label': 'Pemikir Dinamis'},
+            {'url': '4.html', 'label': 'Pemikir Pendobrak'},
+            {'url': '5.html', 'label': 'Idealis Spontan'},
+            {'url': '6.html', 'label': 'Pelaku Santai'},
+            {'url': '7.html', 'label': 'Realis Sosial'},
+            {'url': '8.html', 'label': 'Realis Bertekad'},
+            {'url': '9.html', 'label': 'Pelaku Bersemangat'},
+            {'url': '10.html', 'label': 'Pelaku Individualistis'},
+            {'url': '11.html', 'label': 'Pelaku Peka'},
+            {'url': '12.html', 'label': 'Realis Baik Hati'},
+            {'url': '13.html', 'label': 'Realis Tepercaya'},
+            {'url': '14.html', 'label': 'Pemikir Mandiri'},
+            {'url': '15.html', 'label': 'Pemikir Analitis'},
+            {'url': '16.html', 'label': 'Idealis Pemimpi'}
+        ];
+        
         this.init();
     }
 
     init() {
         this.displayFooter();
         this.displayDropdownMenu();
+        this.displayLogo();
     }
 
     displayDropdownMenu() {
-        let topMenuHTML = '<ul><li><a href="#">Idealis Penyelaras</a></li><li><a href="#">Idealis Terlibat</a></li><li><a href="#">Pemikir Dinamis</a></li><li><a href="#">Pemikir Pendobrak</a></li><li><a href="#">Idealis Spontan</a></li><li><a href="#">Sample Menu</a></li></ul>';
+        let dropdownMenuHTML = "<ul>";
+        
+        // start loop variable this.personalities
+        for(let i = 0; i < this.personalities.length; i++) {
+            dropdownMenuHTML += "<li><a href='#'>"+this.personalities[i]['label']+"</a></li>";
+        }
+
+        dropdownMenuHTML += "</ul>";
 
         const topMenuContainer = document.querySelector('.dropdown-menu-container');
-        topMenuContainer.innerHTML = topMenuHTML;
+        topMenuContainer.innerHTML = dropdownMenuHTML;
     }
+
+    displayLogo() {
+        let logoHTML = '<a href="index.html"><img src="ipersonic-logo.png"/></a>';
+
+        const logoContainer = document.querySelector('.logo-container');
+        logoContainer.innerHTML = logoHTML;
+    }    
 
     displayFooter() { // function or method
         let footerHTML = '<p> © iPersonic | <a href="#">Personality Test</a> | <a href="#">Career Test</a> | <a href="#">Persönlichkeitstest</a> | <a href="#">Berufstest</a> | <a href="#">Privacy Policy</a> | <a href="#">Felicitas Heyne</a> | <a href="#">Impressum</a> | <a href="#">Help & Contact</a> | iPersonic supports  <a href="#">Audiopedia Foundation</a></p>';
