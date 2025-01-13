@@ -38,6 +38,7 @@ class PersonalityQuiz { // class or module
             }
         ];
         
+        this.fxAnswer = "";
         this.init();
     }
 
@@ -45,6 +46,7 @@ class PersonalityQuiz { // class or module
         this.displayFooter();
         this.displayDropdownMenu();
         this.displayLogo();
+        this.displayQuizOptions();
     }
 
     displayDropdownMenu() {
@@ -74,6 +76,23 @@ class PersonalityQuiz { // class or module
 
         const footerContainer = document.querySelector(".footer-container");
         footerContainer.innerHTML = footerHTML;
+    }
+
+    displayQuizOptions() {
+        // count totalAnswer
+        let totalAnswer = this.fxAnswer.length;
+
+        // set quiz step
+        let quizStepHTML = "<ul>";
+        // loop
+        for(let i = 0; i < this.quizOptions.length; i++) {
+            let numberStep = i + 1;
+            quizStepHTML += "<li>Langkah "+numberStep+"</li>";
+        }
+        quizStepHTML += "</ul>";
+
+        const quizStepContainer = document.querySelector(".quiz-step");
+        quizStepContainer.innerHTML = quizStepHTML;
     }
 }
 
